@@ -111,7 +111,7 @@ namespace Itransition_ex3
                 Console.WriteLine(win ? "Computer win!" : "You win!");
             }
             
-            Console.WriteLine($"HMAC:\n{HMACHASH(movePlayer, randomKey)}");
+            Console.WriteLine($"HMAC key: {BitConverter.ToString(randomKey).Replace("-", string.Empty).ToLower()}");
             
 
             return 0;
